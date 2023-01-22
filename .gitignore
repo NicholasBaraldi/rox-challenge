@@ -1,0 +1,8 @@
+.env
+api_keys.json
+logs*
+.coverage
+__pycache__/
+.pytest_cache
+.vscode
+postgres_data/
