@@ -5,19 +5,19 @@ sources:
     tables:
       - name: Person
         description: >
-          stores actors data including first name and last name.
+          People data including first name and last name.
       - name: Product
         description: >
-          stores address data for staff and customers
+          Product general information.
       - name: SalesOrderDetail
         description: >
-          stores film's categories data.
+          Details about all sales.
       - name: SalesOrderHeader
         description: >
-          stores city names.
+          More specific order data.
       - name: SpecialOfferProduct
         description: >
-          stores country names.
+          Special offer data.
       - name: Customer
         description: >
-          stores country names.
+          Customer data.
