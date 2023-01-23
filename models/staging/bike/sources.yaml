@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: public
+    tables:
+      - name: Person
+        description: >
+          stores actors data including first name and last name.
+      - name: Product
+        description: >
+          stores address data for staff and customers
+      - name: SalesOrderDetail
+        description: >
+          stores film's categories data.
+      - name: SalesOrderHeader
+        description: >
+          stores city names.
+      - name: SpecialOfferProduct
+        description: >
+          stores country names.
+      - name: Customer
+        description: >
+          stores country names.

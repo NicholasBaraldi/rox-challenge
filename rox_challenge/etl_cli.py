@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine
 import click
 import os
+import regex as re
 
 from rox_challenge.source.data_source import CSVSource
 from rox_challenge.targets.target_db import Target
@@ -17,7 +18,8 @@ def create_tables():
     )
     postgres = Target(engine=engine)
     for file_name, df in dict.items():
-        postgres.write(dataframe=df, table_name=file_name)
+        table_name = re.search(r"((?<=\.)([^.]+)(?=\.))", file_name)
+        postgres.write(dataframe=df, table_name=table_name.group(1))
 
 
 if __name__ == "__main__":

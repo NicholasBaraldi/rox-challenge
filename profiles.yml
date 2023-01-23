@@ -1,0 +1,15 @@
+rox_challange_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: 127.0.0.1
+      user: postgres
+      password: password
+      port: 5432
+      dbname: bike_database
+      schema: dbt_schema
+      threads: 2
+      keepalives_idle: 0 
+      connect_timeout: 10 
+      retries: 1  
